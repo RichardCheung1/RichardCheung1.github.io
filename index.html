@@ -11,7 +11,8 @@
 
   <meta property="og:site_name" content="Richard Cheung"/>
   <meta property="og:title" content="Richard Cheung Website"/>
-  <meta property="og:description" content="Richard is a recent Electrical Engineer graduate. Learn more about Richard"/>
+  <meta property="og:description"
+        content="Richard is a soon-to-be Electrical Engineer graduate. Learn more about Richard"/>
 
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
@@ -30,17 +31,143 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
+  <!--Roboto Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300" rel="stylesheet">
+  <!--Material Icons-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  <!--devicons-->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
+  <!--MaterializeCSS-->
+  <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Richard Cheung</title>
 </head>
 
 <body>
-hello
+<!--Main container-->
+<div class="main-container">
+  <!--Intro-->
+  <div id="overlayView" class="overlay">
+    <!--Navbar-->
+    <nav id="nav" class="transparent">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo left hide">Richard Li Yang Cheung</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work Experiences</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+          <ul id="slide-out" class="side-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work Experiences</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+
+      </div>
+    </nav>
+    <!--/End Navbar-->
+    <div class="overlay-content">
+      <h1>Richard Li Yang Cheung</h1>
+      <h5>Soon-to-be-graduate | Passionate software developer </h5>
+    </div>
+  </div>
+  <!--/End Intro-->
+  <!--Information container-->
+  <div class="container row">
+    <!--Section About-->
+    <section id="about" class="col s12">
+      <div class="col m6">
+        <h2>About me</h2>
+        <p>I am soon-to-be Electrical Engineering graduate
+          with software engineering industry experience looking for full
+          time employment.
+        </p>
+      </div>
+
+    </section>
+    <!--/End Section About-->
+    <!--Section Skills-->
+    <section id="skills" class="col s12">
+      <h2>Skills</h2>
+      <div class="col m4">
+        <h4>Proficient</h4>
+        <ol class="left bullet">
+          <li>
+            <p>Java</p>
+          </li>
+          <li>
+
+          </li>
+        </ol>
+      </div>
+      <div class="col m4">
+        <h4>Intermediate</h4>
+
+      </div>
+      <div class="col m4">
+        <h4>Novice</h4>
+
+      </div>
+    </section>
+    <!--/End Section Skills-->
+    <!--Section Work-->
+    <section id="work" class="col s12">
+      <h2>Work Experiences</h2>
+
+    </section>
+    <!--/End Section Work-->
+
+    <section id="edu" class="col s12">
+      <h2>Education</h2>
+
+    </section>
+    <!--Section Projects-->
+    <section id="projects" class="col s12">
+      <h2>Projects</h2>
+
+    </section>
+    <!--/End Section Projects-->
+  </div>
+  <!--footer-->
+  <footer class="page-footer light-green darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="">Find me on</h4>
+          <div class="col s12 m6" id="gitLink">
+            <a id="" href="https://github.com/RichardCheung1" title="Richard's GitHub">
+            </a>
+          </div>
+          <div class="col s12 m6" id="linkedinLink">
+            <a id="linkedLink" href="https://www.linkedin.com/in/richard-cheung-838a9a49">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright light-green darken-4">
+      <div class="container center">
+        &#169;
+        2016 Copyright. All rights reserved to Richard Li Yang Cheung.
+      </div>
+    </div>
+  </footer>
+  <!--/End Footer-->
+</div>
+<!--/End Main container-->
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

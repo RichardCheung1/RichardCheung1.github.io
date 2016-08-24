@@ -1,0 +1,94 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    position: relative;
+    margin: 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#overlayView {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 30% 60%;
+    background-image: -webkit-linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url('../assets/img/IMG_0314.png'); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url('../assets/img/IMG_0314.png'); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url('../assets/img/IMG_0314.png'); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url('../assets/img/IMG_0314.png');
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#overlayView .overlay {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+#overlayView .overlay-content {
+    color: white;
+    padding: 150px 0 50px 20px;
+    text-align: left;
+}
+
+#overlayView .overlay-content h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section h2 {
+    color: #388E3C;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+ol .bullet {
+    list-style-type: inherit;
+}
+
+#gitLink {
+    background-image:url(../assets/img/GitHub_Logo.png);
+    background-size: contain;
+    min-height: 128px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-repeat: no-repeat;
+    white-space:nowrap;
+}
+
+#linkedinLink {
+    background-image:url(../assets/img/Logo-2C-128px-TM.png);
+    background-size: contain;
+    min-height: 112px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-repeat: no-repeat;
+    white-space:nowrap;
+}
