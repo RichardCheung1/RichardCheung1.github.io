@@ -3,25 +3,61 @@ html, body {
     height: 100%;
 }
 
+.dark-primary-color {
+    background: #388E3C;
+}
+
+.default-primary-color {
+    background: #4CAF50;
+}
+
+.light-primary-color {
+    background: #C8E6C9;
+}
+
+.text-primary-color {
+    color: #FFFFFF;
+}
+
+.accent-color {
+    background: #448AFF;
+}
+
+.primary-text-color {
+    color: #212121;
+}
+
+.secondary-text-color {
+    color: #757575;
+}
+
+.divider-color {
+    border-color: #BDBDBD;
+}
+
 .main-container {
     position: relative;
-    margin: 0 0;
-    padding: 0 0 0 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: -1;
 }
 
 #overlayView {
     position: relative;
+    top:-64px;
+    min-height: 100%;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: 30% 60%;
+    z-index:0;
+    left: 0;
+    overflow-x: hidden;
     background-image: -webkit-linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
@@ -38,11 +74,7 @@ html, body {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
     ), url('../assets/img/IMG_0314.png');
-    z-index: 1;
-    left: 0;
-    overflow-x: hidden;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+
 }
 
 #overlayView .overlay {
@@ -62,33 +94,29 @@ html, body {
 }
 
 section h2 {
-    color: #388E3C;
+    color: #757575;
     font-family: 'Roboto Condensed', sans-serif;
-
 }
 
-ol .bullet {
-    list-style-type: inherit;
+section p {
+    color: #212121;
 }
 
-#gitLink {
-    background-image:url(../assets/img/GitHub_Logo.png);
-    background-size: contain;
-    min-height: 128px;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-repeat: no-repeat;
-    white-space:nowrap;
+section a {
+    color: #448AFF;
 }
 
-#linkedinLink {
-    background-image:url(../assets/img/Logo-2C-128px-TM.png);
-    background-size: contain;
-    min-height: 112px;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-repeat: no-repeat;
-    white-space:nowrap;
+.header {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: capitalize;
+}
+
+.bullet ul li {
+    list-style-type: disc;
+}
+
+.responsive-img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
