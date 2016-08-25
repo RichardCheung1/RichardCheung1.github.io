@@ -53,6 +53,8 @@ html, body {
     -moz-background-size: inherit;
     -o-background-size: inherit;
     background-position: center;
+    background-position-x: 10%;
+    background-position-y: 50%;
     z-index:0;
     left: 0;
     overflow-x: hidden;
