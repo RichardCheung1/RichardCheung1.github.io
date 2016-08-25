@@ -52,7 +52,7 @@ html, body {
     -webkit-background-size: inherit;
     -moz-background-size: inherit;
     -o-background-size: inherit;
-    background-position: 30% 60%;
+    background-position: center;
     z-index:0;
     left: 0;
     overflow-x: hidden;
