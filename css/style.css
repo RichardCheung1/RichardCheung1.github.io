@@ -72,30 +72,12 @@ section#skills {
     background: #FFFFFF;
 }
 
-
 .wrapper {
     position: relative;
     z-index: -1;
 }
 
 #overlayView {
-    position: relative;
-    top: -64px;
-    min-height: 100vh;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.5);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: inherit;
-    -webkit-background-size: inherit;
-    -moz-background-size: inherit;
-    -o-background-size: inherit;
-    background-position: center;
-    background-position-x: 10%;
-    background-position-y: 50%;
-    z-index: 0;
-    left: 0;
-    overflow-x: hidden;
     background-image: -webkit-linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
@@ -112,6 +94,43 @@ section#skills {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
     ), url('../assets/img/IMG_0314.png');
+    background-position: center center;
+    height: 600px;
+    top: -64px;
+    position: relative;
+
+}
+
+@media (min-width: 768px) {
+    #overlayView {
+        position: relative;
+        top: -64px;
+        min-height: 100vh;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: inherit;
+        -webkit-background-size: inherit;
+        -moz-background-size: inherit;
+        -o-background-size: inherit;
+        background-image: -webkit-linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+        ), url('../assets/img/IMG_0314.png'); /* For Safari 5.1 to 6.0 */
+        background-image: -o-linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+        ), url('../assets/img/IMG_0314.png'); /* For Opera 11.1 to 12.0 */
+        background-image: -moz-linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+        ), url('../assets/img/IMG_0314.png'); /* For Firefox 3.6 to 15 */
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+        ), url('../assets/img/IMG_0314.png');
+    }
 }
 
 #overlayView .overlay {
