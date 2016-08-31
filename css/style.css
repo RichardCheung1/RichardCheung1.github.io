@@ -35,7 +35,44 @@ html, body {
     border-color: #BDBDBD;
 }
 
-#wrapper {
+section h2 {
+    color: #43A047;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section p {
+    color: #212121;
+}
+
+section::before,
+section::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+section#skills {
+    overflow: hidden;
+    position: relative;
+    background-color: #C8E6C9;
+}
+
+.separator-triangle::after,
+.separator-triangle::before {
+    width: 2rem;
+    height: 2rem;
+    -webkit-transform: translateX(50%) rotate(45deg);
+    transform: translateX(50%) rotate(45deg);
+}
+
+.separator-triangle::before {
+    top: -15px;
+    left: 50%;
+    background: #FFFFFF;
+}
+
+
+.wrapper {
     position: relative;
     z-index: -1;
 }
@@ -92,32 +129,23 @@ html, body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-section h2 {
-    color: #43A047;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-section p {
-    color: #212121;
-}
-
-a:link {
+.side-line a:link {
     color: #212121;
     text-decoration: none;
 }
 
-a:visited {
+.side-line a:visited {
     color: #212121;
     text-decoration: none;
 }
 
-a:hover:before {
+.side-line a:hover:before {
     content: "";
     border-left: 3px solid #4CAF50;
 
 }
 
-a:active {
+.side-line a:active {
     text-decoration: none;
     color: #448AFF;
 }
@@ -125,6 +153,10 @@ a:active {
 .header {
     font-family: "Roboto Condensed", sans-serif;
     text-transform: capitalize;
+}
+
+ul.bullet li {
+    list-style-type: disc;
 }
 
 #cd-timeline a:link {
@@ -147,19 +179,11 @@ a:active {
     color: #448AFF;
 }
 
-ul.bullet li {
-    list-style-type: disc;
-}
-
-#skills {
-    background-color: #C8E6C9;
-}
-
 #cd-timeline {
     position: relative;
     padding: 2em 2em;
     margin-bottom: 2em;
-    border-top: thick  #C8E6C9;
+    border-top: thick #C8E6C9;
 }
 
 #cd-timeline::before {
@@ -175,7 +199,7 @@ ul.bullet li {
 
 @media only screen and (min-width: 1200px) {
     #cd-timeline {
-        margin-top: 3em;
+        margin-top: 0;
         margin-bottom: 3em;
     }
 
