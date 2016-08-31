@@ -1,6 +1,7 @@
 html, body {
+    height: 100vh; /* set viewport constraint for ios*/
+    min-height: 100%; /* enforce height */
     width: 100%;
-    height: 100%;
 }
 
 .dark-primary-color {
