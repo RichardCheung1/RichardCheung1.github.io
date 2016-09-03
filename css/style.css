@@ -36,6 +36,84 @@ html, body {
     border-color: #BDBDBD;
 }
 
+.arc1 {
+    width: 160px;
+    height: 160px;
+    background: #00a0db;
+    -webkit-transform-origin: -31% 61%;
+    margin-left: -30px;
+    margin-top: 20px;
+    -webkit-transform: translate(-54px,50px);
+    -moz-transform: translate(-54px,50px);
+    -o-transform: translate(-54px,50px);
+}
+.p-100 {
+    width: 150px;
+    height: 150px;
+    background: #4CAF50;
+    position: absolute;
+}
+
+.p-75 {
+    width: 75px;
+    height: 150px;
+    background: #4CAF50;
+    position: absolute;
+    left:75px;
+}
+
+.p-75::after {
+    content:"";
+    width: 75px;
+    height: 75px;
+    left: -75px;
+    top: 75px;
+    background: #4CAF50;
+    position:absolute;
+}
+
+.p-50 {
+    width: 75px;
+    height: 150px;
+    background: #4CAF50;
+    position: absolute;
+    left:75px;
+}
+
+.pie-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #757575;
+    overflow:hidden;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+}
+
+.pie-overlay {
+    width: 100px;
+    height: 100px;
+    background: #C8E6C9;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    line-height: 100px;
+    text-shadow: 0 2px 0 #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 50px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+.pie-container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
 section h2 {
     color: #43A047;
     font-family: 'Roboto Condensed', sans-serif;
