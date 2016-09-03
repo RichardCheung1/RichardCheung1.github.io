@@ -36,17 +36,41 @@ html, body {
     border-color: #BDBDBD;
 }
 
-.arc1 {
-    width: 160px;
-    height: 160px;
-    background: #00a0db;
-    -webkit-transform-origin: -31% 61%;
-    margin-left: -30px;
-    margin-top: 20px;
-    -webkit-transform: translate(-54px,50px);
-    -moz-transform: translate(-54px,50px);
-    -o-transform: translate(-54px,50px);
+.social-icon-wrapper {
+    min-height: 48px;
+    width: 48px;
+    margin: 0 auto;
 }
+
+.social {
+    min-height: 48px;
+    width: 48px;
+}
+
+.facebook {
+    background: url(../assets/img/facebook-box.png) no-repeat;
+    background-position: center;
+}
+
+.linkedin {
+    background: url(../assets/img/linkedin-box.png) no-repeat;
+    background-position: center;
+}
+
+.git {
+    background: url(../assets/img/github-box.png) no-repeat;
+    background-position: center;
+}
+
+.mail {
+    background: url(../assets/img/email.png) no-repeat;
+    background-position: center;
+}
+.resume {
+    background: url(../assets/img/file-pdf-box.png) no-repeat;
+    background-position: center;
+}
+
 .p-100 {
     width: 150px;
     height: 150px;
@@ -59,17 +83,17 @@ html, body {
     height: 150px;
     background: #4CAF50;
     position: absolute;
-    left:75px;
+    left: 75px;
 }
 
 .p-75::after {
-    content:"";
+    content: "";
     width: 75px;
     height: 75px;
     left: -75px;
     top: 75px;
     background: #4CAF50;
-    position:absolute;
+    position: absolute;
 }
 
 .p-50 {
@@ -77,7 +101,7 @@ html, body {
     height: 150px;
     background: #4CAF50;
     position: absolute;
-    left:75px;
+    left: 75px;
 }
 
 .pie-wrapper {
@@ -85,7 +109,7 @@ html, body {
     height: 150px;
     border-radius: 50%;
     background: #757575;
-    overflow:hidden;
+    overflow: hidden;
     top: 25px;
     left: 25px;
     position: absolute;
@@ -106,8 +130,9 @@ html, body {
     z-index: 5;
     top: 50px;
     left: 50px;
-    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 .pie-container {
     position: relative;
     height: 200px;
@@ -258,12 +283,12 @@ ul.bullet li {
 }
 
 #cd-timeline a:link {
-    color: white;
+    color: #448AFF;
 
 }
 
 #cd-timeline a:visited {
-    color: white;
+    color: purple;
 }
 
 #cd-timeline a:hover {
