@@ -1,4 +1,2 @@
-*.idea 
-node_modules
-bower_components
-gulpfile.js
+bower_components/
+.idea/
