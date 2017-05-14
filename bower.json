@@ -1,0 +1,20 @@
+{
+  "name": "XIOuZGO",
+  "homepage": "https://github.com/RichardCheung1/Web",
+  "authors": [
+    "Richard Cheung <li.cheung@mail.mcgill.ca>"
+  ],
+  "description": "my personal blog",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
