@@ -1,5 +1,5 @@
 <!-- Page Content -->
-<section id="projects" class="diagonal-divider">
+<section id="projects">
   {% for post in site.posts reversed %}
   {% if post.category contains 'Project'%}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -18,7 +18,7 @@
           <div>{{ post.content }}</div>
         </div>
         <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <!--<img class="img-responsive center-block" src="img/projects/{{ post.img }}">-->
+          <img class="img-responsive center-block" src="img/projects/{{ post.img }}">
         </div>
       </div>
 
@@ -30,7 +30,7 @@
           <div>{{ post.content }}</div>
         </div>
         <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <!--<img class="img-responsive center-block" src="img/projects/{{ post.img }}">-->
+          <img class="img-responsive center-block" src="img/projects/{{ post.img }}">
         </div>
       </div>
 
