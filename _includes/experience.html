@@ -1,5 +1,5 @@
 <!-- Page Content -->
-<section id="experiences" >
+<section id="experiences">
   {% for post in site.posts reversed %}
   {% if post.category contains 'Experience'%}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -14,11 +14,17 @@
 
       <div class="row">
         <div class="col-lg-5 col-sm-6">
+          {% if post.url == "" %}
           <h2 class="post-title">{{ post.title }}</h2>
+          {% else %}
+          <h2 class="post-title"><a href="{{post.url}}" target="_blank">{{ post.title }}</a></h2>
+          {% endif %}
+
+          <h3 class="post-meta">{{post.description}}</h3>
           <div>{{ post.content }}</div>
         </div>
         <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <!--<img class="img-responsive center-block" src="img/exp/{{ post.img }}">-->
+          <img class="img-responsive center-block fa-align-center" src="img/exp/{{ post.img }}">
         </div>
       </div>
 
@@ -26,11 +32,17 @@
 
       <div class="row">
         <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+          {% if post.url != "" %}
           <h2 class="post-title">{{ post.title }}</h2>
+          {% else %}
+          <h2 class="post-title"><a href="{{post.url}}" target="_blank">{{ post.title }}</a></h2>
+          {% endif %}
+
+          <h3 class="post-meta">{{post.description}}</h3>
           <div>{{ post.content }}</div>
         </div>
         <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <!--<img class="img-responsive center-block" src="img/exp/{{ post.img }}">-->
+          <img class="img-responsive center-block" src="img/exp/{{ post.img }}">
         </div>
       </div>
 

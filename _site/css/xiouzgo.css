@@ -1,5 +1,5 @@
 body {
-  font-size: 20px;
+  font-size: 16px;
   color: #212121;
   background: #FFFFFF;
 }
@@ -51,6 +51,7 @@ body {
 #contact {
   background-color: #009688;
   margin: 0;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .list-inline {
@@ -287,7 +288,7 @@ section {
   margin-bottom: 10px;
   font-weight: 300;
 }
-.post-entry > .post-meta {
+.post-entry .post-meta {
   color: #757575;
   font-size: 18px;
   font-style: italic;
