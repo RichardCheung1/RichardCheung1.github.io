@@ -3,9 +3,9 @@
  */
 
 jQuery(document).ready(function ($) {
-    var screenWidth = 1170;
+    var screenWidth = 768;
     //primary navigation slide-in effect
-    if ($(window).width() > screenWidth) {
+    if ($(window).width() >= screenWidth) {
         var headerHeight = $('.navbar-custom').height();
         $(window).on('scroll', {
                 previousTop: 0
