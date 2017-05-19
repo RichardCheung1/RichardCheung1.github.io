@@ -38,8 +38,10 @@ body {
 }
 #about {
   top: -50px;
+  padding: 0px;
 }
 #about .card {
+  border-radius: 2px;
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
@@ -47,7 +49,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 10px 12px rgba(0, 0, 0, 0.22);
 }
 #contact {
-  background-color: #B2DFDB;
+  background-color: #009688;
   margin: 0;
   padding-bottom: 50px;
 }
@@ -84,7 +86,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #009688;
+  color: #FFC107;
 }
 a img:hover,
 a img:focus {
@@ -132,7 +134,7 @@ hr.small.extended {
 }
 .navbar-custom .nav li.hover,
 .navbar-custom .nav li.focus {
-  background-color: #009688;
+  background-color: #FFC107;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -160,7 +162,7 @@ hr.small.extended {
   }
   .navbar-custom .nav li ul.dropdown-menu a:hover,
   .navbar-custom .nav li ul.dropdown-menu a:focus {
-    color: #009688;
+    color: #FFC107;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -192,14 +194,14 @@ hr.small.extended {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #009688;
+    color: #FFC107;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #212121;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #009688;
+    color: #FFC107;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -263,8 +265,9 @@ hr.small.extended {
   }
 }
 section {
-  position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .post-entry {
   color: #212121;
@@ -301,7 +304,7 @@ section {
   border-bottom-left-radius: 5px;
 }
 footer {
-  background-color: #00796B;
+  background-color: #009688;
   padding: 50px 0 65px;
 }
 footer .list-inline-footer {
@@ -318,21 +321,22 @@ footer p {
 }
 .btn {
   font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 0;
   padding: 15px 25px;
 }
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+  width: 170px;
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #009688;
-  border: 1px solid #009688;
+  background-color: #FFC107;
+  border: 1px solid #FFC107;
   color: white;
 }
 .btn-social {

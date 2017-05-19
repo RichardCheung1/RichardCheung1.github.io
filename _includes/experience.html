@@ -1,5 +1,5 @@
 <!-- Page Content -->
-<section id="experiences" class="diagonal-divider">
+<section id="experiences" >
   {% for post in site.posts reversed %}
   {% if post.category contains 'Experience'%}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}

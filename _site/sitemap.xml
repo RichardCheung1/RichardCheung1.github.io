@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/experience/2014/09/03/exp.html</loc>
+<loc>http://localhost:4000/experience/2014/09/03/exp.html</loc>
 <lastmod>2014-09-03T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>/project/2015/05/05/pro.html</loc>
+<loc>http://localhost:4000/project/2015/05/05/pro.html</loc>
 <lastmod>2015-05-05T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>/rsc/Richard_Cheung_2017.pdf</loc>
+<loc>http://localhost:4000/rsc/Richard_Cheung_2017.pdf</loc>
 <lastmod>2017-05-11T22:34:47-04:00</lastmod>
 </url>
 </urlset>
