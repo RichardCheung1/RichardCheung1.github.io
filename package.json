@@ -1,0 +1,40 @@
+{
+  "name": "xiouzgo",
+  "version": "1.0.0",
+  "description": "Website about me",
+  "private": true,
+  "main": "./src/js/app.js",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-htmlmin": "^2.3.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^3.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "less": "^2.7.2",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardCheung1/Web.git"
+  },
+  "author": "Richard Cheung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardCheung1/Web/issues"
+  },
+  "homepage": "https://github.com/RichardCheung1/Web#readme"
+}

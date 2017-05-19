@@ -1,0 +1,68 @@
+source:       .
+destination:  ./_site
+
+layouts_dir:  _layouts
+includes_dir: _includes
+collections:
+  posts:
+    output:   true
+
+exclude:              ["Gemfile","Gemfile.lock","node_modules","bower_components","less","bower.json","Gruntfile.js", "package.json"]
+markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
+encoding:             "utf-8"
+strict_front_matter: false
+
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: ""
+show_dir_listing: false
+
+kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+
+gems:
+  - jekyll-sitemap
+
+
+# Name of your site (displayed in the header)
+name: Richard Cheung
+
+# Short bio or description (displayed in the header)
+description: Electrical Engineering Graduate & AI Enthusiast
+
+social:
+#  - icon: medium
+#    title: blog
+#    url:
+  - icon: envelope-o
+    title: email
+    url: mailto:liyang.cheung@gmail.com
+  - icon: github
+    title: github
+    url: https://github.com/RichardCheung1
+  - icon: linkedin
+    title: linkedin
+    url: https://www.linkedin.com/in/richard-liyang-cheung/
+  - icon: file-pdf-o
+    title: resume
+    url: http://www.liyangcheung.com/rsc/resume.pdf
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus:
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:
