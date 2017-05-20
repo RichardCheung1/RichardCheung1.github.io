@@ -1,6 +1,6 @@
 <!-- Page Content -->
 <section id="experiences">
-  {% for post in site.posts reversed %}
+  {% for post in site.posts %}
   {% if post.category contains 'Experience'%}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
   <div class=" post-entry">
