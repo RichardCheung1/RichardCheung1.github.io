@@ -5,6 +5,5 @@ title: Microprocessor System
 description: 
 img: STM32F4-DISCOVERY_Board.jpg
 ---
-* Contributed in developing an Android application to
-display accelerometer and temperature values.
+* Developed an Android application displaying accelerometer and temperature values
 * Configured SPI to communicate with Android device using BLE
