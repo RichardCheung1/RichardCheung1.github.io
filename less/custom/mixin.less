@@ -5,11 +5,11 @@
   transition: all 0.5s;
 }
 
-.background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+.background-cover(@mode: cover) {
+  -webkit-background-size: @mode;
+  -moz-background-size: @mode;
+  background-size: @mode;
+  -o-background-size: @mode;
 }
 
 .serif-font() {

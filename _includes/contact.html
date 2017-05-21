@@ -6,14 +6,14 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>For more...</h2>
-          <p>Please visit my <a href="https://github.com/RichardCheung1?tab=repositories">Github repo</a></p>
-          <p>or visit my <a href="https://www.linkedin.com/in/richard-liyang-cheung/">LinkedIn profile</a></p>
+          <p>Please visit my <a class="text-white" href="https://github.com/RichardCheung1?tab=repositories">Github repo</a></p>
+          <p>or visit my <a class="text-white" href="https://www.linkedin.com/in/richard-liyang-cheung/">LinkedIn profile</a></p>
         </div>
         <div class="col-lg-8">
           <ul class="list-inline">
             {% for social in site.socials limit:1 %}
             <li>
-              <a href="{{ social.url }}" class="btn btn-default btn-lg btn-social">
+              <a href="{{ social.url }}" class="btn btn-default btn-social">
                 <i class="fa fa-{{ social.icon }} fa-fw"></i>
                 <span class="social-btn">{{ social.title }}</span>
               </a>
@@ -22,7 +22,7 @@
 
             {% for social in site.socials offset:1 %}
             <li>
-              <a href="{{ social.url }}" target="_blank" class="btn btn-default btn-lg btn-social">
+              <a href="{{ social.url }}" target="_blank" class="btn btn-default btn-social">
                 <i class="fa fa-{{ social.icon }} fa-fw"></i>
                 <span class="social-btn">{{ social.title }}</span>
               </a>

@@ -3,56 +3,49 @@ body {
   color: #212121;
   background: #FFFFFF;
 }
-.diagonal-divider {
+.grey {
   background: #F5F5F5;
-  position: relative;
 }
-.diagonal-divider:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -40px;
-  width: 100%;
-  height: 60px;
-  background: #F5F5F5;
-  -webkit-transform: skewY(1deg);
-  -moz-transform: skewY(1deg);
-  -ms-transform: skewY(1deg);
-  -o-transform: skewY(1deg);
-  transform: skewY(1deg);
-  -webkit-backface-visibility: hidden;
-}
-.diagonal-divider:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  bottom: -40px;
-  background: #F5F5F5;
-  -webkit-transform: skewY(-1deg);
-  -moz-transform: skewY(-1deg);
-  -ms-transform: skewY(-1deg);
-  -o-transform: skewY(-1deg);
-  transform: skewY(-1deg);
-  -webkit-backface-visibility: hidden;
-}
-#about {
-  top: -50px;
-  padding: 0px;
-}
-#about .card {
+.card {
   border-radius: 2px;
-  padding-top: 50px;
   padding-bottom: 50px;
-  position: relative;
   background: white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 10px 12px rgba(0, 0, 0, 0.22);
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card .card-img {
+  display: block;
+  background-color: #a3afbf;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  background-attachment: scroll;
+  height: 250px;
+  transition: opacity .2s;
+  opacity: .8;
+  border-radius: 3px 3px 0 0;
+}
+.card img .card-img-top {
+  height: 250px;
+}
+.card .card-content {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 #contact {
-  background-color: #009688;
+  background-color: #526173;
+  color: #a3afbf;
   margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.text-white {
+  color: #FFFFFF;
 }
 .list-inline {
   margin: 0;
@@ -69,9 +62,6 @@ p {
 }
 p a {
   text-decoration: underline;
-}
-.text-white {
-  color: #FFFFFF;
 }
 h1,
 h2,
@@ -214,14 +204,12 @@ hr.small.extended {
   }
 }
 .intro-header {
-  background-color: #009688;
-  background: no-repeat center center;
+  background: #303F9F;
   background-attachment: scroll;
 }
 .intro-header #particles-js {
   width: 100%;
   height: 100%;
-  background-image: url('../img/nn_header.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -305,8 +293,9 @@ section {
   border-bottom-left-radius: 5px;
 }
 footer {
-  background-color: #009688;
+  background-color: #1d262f;
   padding: 50px 0 65px;
+  color: #a3afbf;
 }
 footer .list-inline-footer {
   margin-bottom: 20px;
